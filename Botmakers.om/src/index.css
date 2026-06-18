@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-black: #0a0a0a;
+  --color-brand-dark: #111111;
+  --color-brand-card: #1a1a1a;
+  --color-brand-red: #ff3333;
+  --color-brand-redHover: #cc0000;
+  --color-brand-text: #e0e0e0;
+  --color-brand-muted: #888888;
+  --color-brand-border: #333333;
+  --color-brand-blue: #0066cc;
+  --color-brand-blueDark: #002244;
+
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Syncopate', sans-serif;
+
+  --background-image-grid-pattern: linear-gradient(to right, #1f2937 1px, transparent 1px), linear-gradient(to bottom, #1f2937 1px, transparent 1px);
+  --background-image-hero-glow: radial-gradient(circle at center, rgba(255, 51, 51, 0.15) 0%, transparent 70%);
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: 'Syncopate', sans-serif;
+  text-transform: uppercase;
+}
+
+.clip-button {
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+
+.hex-icon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.bg-grid {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+}
